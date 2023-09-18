@@ -21,8 +21,6 @@ public class PlayerController : MonoBehaviour
     Vector3 velocity;
 
     void Update(){
-        Debug.Log(velocity.y);
-
         isGrounded = Physics.CheckSphere(groundCheck.position,groundDistance,groundMask);
 
         if(isGrounded && velocity.y < 0 ){
